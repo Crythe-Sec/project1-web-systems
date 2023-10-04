@@ -1,4 +1,32 @@
+/* alternate.css */
 
-p {
-    color: red;
+body {
+    background-color: #FFF9E3; /* Eggshell white background color */
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; /* Set the font to Palatino */
 }
+
+img {
+    max-width: 30%; /* Make the pictures proportionally bigger and limit their width */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Center the images */
+    margin: 0 auto; /* Center the images horizontally */
+}
+
+h1, h2, h3, p, ul, li {
+    text-align: center; /* Center text content */
+    color: #013b01; /* Darker green text color (adjust the value as needed) */
+    font-size: 30px; /* Set the font size (adjust the value as needed) */
+}
+
+ul {
+    list-style-type: disc; /* Add bullet points to unordered lists */
+    list-style-position: inside; /* Place the bullet points inside the list items */
+    padding: 0; /* Remove padding for the entire unordered list */
+}
+
+li {
+    text-align: left; /* Left-align list items */
+    margin: 10px 0; /* Adjust the margin to control spacing between list items */
+}
+
+/* Add more styles as needed for your alternate theme */
