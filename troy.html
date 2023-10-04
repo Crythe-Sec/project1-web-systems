@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <head>
-    <link href="./main.css" rel="stylesheet">
+    <link id="stylesheet" href="./main.css" rel="stylesheet">
+    <script>
+	    function toggleCSS() {
+          var currentCSS = document.getElementById('stylesheet');
+          if (currentCSS.getAttribute('href') == 'main.css') {
+            currentCSS.setAttribute('href', 'alternate.css');
+          } else {
+            currentCSS.setAttribute('href', 'main.css');
+          }
+      }
+  </script>
 </head>
 <header id="Header">
     <h1>Welcome to Troy's Webpage</h1>
@@ -19,10 +29,11 @@
             <li><em><a href="#Diving">SCUBA diving</a></em></li>
         </ul>
     </h2>
-    <div id="Chgtheme">
-        <h3>Not feeling the current look of the page?</h3>
-        <p>Click <strong>HERE</strong> to change it up!</p> <!--TODO: ADD CSS switching functionality-->
-    </div>
+
+    <h3>Not feeling the current look of the page?</h3>
+<div id="Chgtheme">
+    Click <strong><button onclick="toggleCSS()">HERE!</button></strong> to change it up!<br>
+</div>
     
     </section>
     <section id="Music">
